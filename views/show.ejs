@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title><%= filename %></title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <div class="min-h-screen p-10">
+
+        <a href="/" class="text-blue-400 hover:underline">
+            ← Go Back To Home
+        </a>
+
+        <h1 class="text-3xl font-bold mt-10 mb-5">
+            <%= filename %>
+        </h1>
+
+        <div class="bg-gray-800 p-6 rounded-lg">
+
+            <h2 class="text-xl mb-4 text-gray-300">
+                File Content
+            </h2>
+
+            <p class="text-gray-400 whitespace-pre-wrap">
+                <%= filedata %>
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

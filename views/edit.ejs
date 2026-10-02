@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        <%= filename %>
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <div class="min-h-screen p-10">
+
+        <a href="/" class="text-blue-400 hover:underline">
+            ← Go Back To Home
+        </a>
+
+        <div class="form p-10 text-white">
+            <form action="/edit" method="post">
+                <input class="block px-5 py-2 bg-gray-800 w-1/2 rounded-md outline-none" type="text" value="<%= filename %>" name="previous"
+                    placeholder="Title..">
+                <input type="text" class="block px-5 py-2 bg-gray-800 mt-2 resize-none w-1/2 rounded-md outline-none"
+                    name="new" id="" placeholder="Enter your new file name.."></input>
+                <button class="mt-2 bg-blue-900 rounded-md px-5 py-2" type="submit">Update</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
